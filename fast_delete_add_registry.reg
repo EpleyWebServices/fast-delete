@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+; Adding a new registry value called "Fast Delete" for files
+[HKEY_CLASSES_ROOT\*\shell\FastDelete]
+@="Fast Delete"
+
+[HKEY_CLASSES_ROOT\*\shell\FastDelete\command]
+@="\"D:\\commands\\fast-delete\\fast_delete.bat\" \"%1\""
+
+; Adding a new registry value called "Fast Delete" for directories
+[HKEY_CLASSES_ROOT\Directory\shell\FastDelete]
+@="Fast Delete"
+
+[HKEY_CLASSES_ROOT\Directory\shell\FastDelete\command]
+@="\"D:\\commands\\fast-delete\\fast_delete.bat\" \"%1\""
